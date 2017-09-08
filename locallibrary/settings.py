@@ -35,7 +35,7 @@ with open('/etc/secret_key.txt') as f:
 #DEBUG = True
 DEBUG = bool( os.environ.get('DJANGO_DEBUG', True) )
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['robbyslibrary.herokuapp.com']
 
 
 # Application definition
