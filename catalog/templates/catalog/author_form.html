@@ -1,0 +1,11 @@
+{%extends "base_generic.html"%}
+
+{%block content%}
+<form action="" method="post">{# action="" will send the form to current Url#}
+	{%csrf_token%}{# csrf_token make sure there is no cross site request forgery attack#}
+	<table>
+	{{form.as_table}}
+	</table>
+	<input type="submit" value="Submit Form"/>
+</form>
+{%endblock%}
