@@ -19,7 +19,7 @@ class Genre(models.Model):
 
 
 #used to generate Urls by reversing the Url patterns
-from django.urls import reverse
+from django.core.urlresolvers import reverse
 
 class Book(models.Model):
 	title = models.CharField(max_length=200)
